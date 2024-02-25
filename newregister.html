@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="registerstyle.css">
+    <link rel="stylesheet" href="style.css">
+    
+      <!-- fontawesome icon-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!--nave bar-->
+<nav class="navbar">
+    <h1>Nostra</h1>
+<div class="navbar-links">
+   <p class="navebar-link"><a href="indexx.html">Home</p></a>
+   <p class="navebar-link"><a href="collections.html">Collections</p></a>
+   <p class="navebar-link"><a href="contact.html">Contact</p></a>
+   <p class="navebar-link"><a href="loginpage.html">Login</p></a>
+</div>
+<div class="navbar-menu-taggle" onclick="shownavbar()" >
+  
+   <i class="fa-solid fa-bars"></i>
+</div>
+</nav>
+<div class="side-navbar">
+    
+   <p style="text-align: right;" onclick="closenavbar()">
+   <i class="fa-solid fa-xmark"></i>
+   </p>
+   <div class="side-navbar-links">
+       <p class="side-navbar-link"><a href="indexx.html">Home</p></a>
+       <p class="side-navbar-link"><a href="collections.html">Collections</p></a>
+       <p class="side-navbar-link"><a href="cantact.html">Contact</p></a>
+       <p class="side-navbar-link"><a href="loginpage.html">Login</p></a>
+   </div>
+</div>
+<body>
+    <script src="indexx.js"></script>
+    <center>
+        <h1 id="head">Register New User</h1>
+        
+        <form id="container">
+            <div class="form-group">
+                <label for="name" id="name">Name:</label>
+                <input id="name-input" name="name-input" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email">Email:</label>
+                <input id="email-input" name="email-input" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <label for="npwd">New Password:</label>
+                <input id="npwd-input" name="npwd-input" placeholder="new password">
+            </div>
+            <div class="form-group">
+                <label for="cpwd">Confirm Password:</label>
+                <input  id="cpwd-input" name="cpwd-input" placeholder="confirm password">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" name="register" id="registerbtn">
+                <input type="submit" value="Cancel" name="cancel" id="cancelbtn">
+            </div>
+            <div>
+                <p id="navigate" >Are you Existing User?</p>
+                <p id="navigate" ><a href="loginpage.html">Login here</a></p>
+            </div>
+        </form>
+    </center>
+</body>
+<!--footer sectiion-->
+<div class="footer">
+    <div class="footer-container">
+    <h2>Nostra</h2>
+    <p>The most precious items are available and In the beginning of the actual Minimum Price</p>
+    <i class="fa-brands fa-instagram" style="color:;"></i>
+    <i class="fa-brands fa-twitter"  style="color:;"></i>
+    <i class="fa-brands fa-facebook"  style="color:;"></i>
+</div>
+<div>
+    <p  style="color:;">@ 2024 Nostra</p>
+</div>
+</div>
+</html>

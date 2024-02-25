@@ -1,0 +1,81 @@
+#container {
+    background-color: aqua;
+    width: 30%;
+    padding: 20px;
+    background-color:transparent;
+    background-color:rgba(255,255,255,0.7);
+    z-index:1;
+    border-radius: 20px;
+    padding-top:30px;
+    margin-top:50px;
+    margin-bottom:100px;
+    
+    }
+#head{
+    margin-top: 70px;
+}
+body{
+    background-image: url('https://source.unsplash.com/random/1280x1024?fashion');
+    width: cover;
+    animation: animateBackground 10s infinite linear;/* Adjust animation duration and timing function as needed */
+
+}
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 150px; /* Adjust the width according to your preference */
+    font-weight: bold;
+}
+
+#container input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+#cancelbtn{
+    background-color:aqua;
+    color:black;
+    cursor:pointer;
+    box-shadow: 0 0 10px aqua;
+    border:none;
+    padding-left:10px;
+    padding-right:10px;
+}
+#registerbtn{
+    background-color:aqua;
+    color:black;
+    cursor:pointer;
+    box-shadow: 0 0 10px aqua;
+    border:none;
+
+    padding-left:10px;
+    padding-right:10px;
+}
+@media screen and (max-width:700px){
+    #container{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        flex:wrap;
+        width:60%;
+    }
+    body{
+        background-image: url('https://source.unsplash.com/random/700x700?fashion');
+        width:auto;
+    }
+}
+
+
